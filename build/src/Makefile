@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/wenchao/RGB-D-SLAM/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,46 +111,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/main.dir/rule:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
-.PHONY : src/CMakeFiles/main.dir/rule
+src/CMakeFiles/generate_pointcloud.dir/rule:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/generate_pointcloud.dir/rule
+.PHONY : src/CMakeFiles/generate_pointcloud.dir/rule
 
 # Convenience name for target.
-main: src/CMakeFiles/main.dir/rule
+generate_pointcloud: src/CMakeFiles/generate_pointcloud.dir/rule
 
-.PHONY : main
+.PHONY : generate_pointcloud
 
 # fast build rule for target.
-main/fast:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-.PHONY : main/fast
+generate_pointcloud/fast:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/build
+.PHONY : generate_pointcloud/fast
 
-main.o: main.cpp.o
+generatePointCloud.o: generatePointCloud.cpp.o
 
-.PHONY : main.o
+.PHONY : generatePointCloud.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
+generatePointCloud.cpp.o:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/generatePointCloud.cpp.o
+.PHONY : generatePointCloud.cpp.o
 
-main.i: main.cpp.i
+generatePointCloud.i: generatePointCloud.cpp.i
 
-.PHONY : main.i
+.PHONY : generatePointCloud.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+generatePointCloud.cpp.i:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/generatePointCloud.cpp.i
+.PHONY : generatePointCloud.cpp.i
 
-main.s: main.cpp.s
+generatePointCloud.s: generatePointCloud.cpp.s
 
-.PHONY : main.s
+.PHONY : generatePointCloud.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+generatePointCloud.cpp.s:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/generatePointCloud.cpp.s
+.PHONY : generatePointCloud.cpp.s
 
 # Help Target
 help:
@@ -158,12 +158,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... main"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... rebuild_cache"
+	@echo "... generate_pointcloud"
+	@echo "... generatePointCloud.o"
+	@echo "... generatePointCloud.i"
+	@echo "... generatePointCloud.s"
 .PHONY : help
 
 
