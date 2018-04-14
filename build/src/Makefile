@@ -125,6 +125,63 @@ generate_pointcloud/fast:
 	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/build
 .PHONY : generate_pointcloud/fast
 
+# Convenience name for target.
+src/CMakeFiles/slambase.dir/rule:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slambase.dir/rule
+.PHONY : src/CMakeFiles/slambase.dir/rule
+
+# Convenience name for target.
+slambase: src/CMakeFiles/slambase.dir/rule
+
+.PHONY : slambase
+
+# fast build rule for target.
+slambase/fast:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
+.PHONY : slambase/fast
+
+# Convenience name for target.
+src/CMakeFiles/detectFeatures.dir/rule:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/detectFeatures.dir/rule
+.PHONY : src/CMakeFiles/detectFeatures.dir/rule
+
+# Convenience name for target.
+detectFeatures: src/CMakeFiles/detectFeatures.dir/rule
+
+.PHONY : detectFeatures
+
+# fast build rule for target.
+detectFeatures/fast:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
+.PHONY : detectFeatures/fast
+
+detectFeatures.o: detectFeatures.cpp.o
+
+.PHONY : detectFeatures.o
+
+# target to build an object file
+detectFeatures.cpp.o:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.o
+.PHONY : detectFeatures.cpp.o
+
+detectFeatures.i: detectFeatures.cpp.i
+
+.PHONY : detectFeatures.i
+
+# target to preprocess a source file
+detectFeatures.cpp.i:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.i
+.PHONY : detectFeatures.cpp.i
+
+detectFeatures.s: detectFeatures.cpp.s
+
+.PHONY : detectFeatures.s
+
+# target to generate assembly for a file
+detectFeatures.cpp.s:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.s
+.PHONY : detectFeatures.cpp.s
+
 generatePointCloud.o: generatePointCloud.cpp.o
 
 .PHONY : generatePointCloud.o
@@ -152,6 +209,33 @@ generatePointCloud.cpp.s:
 	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/generatePointCloud.cpp.s
 .PHONY : generatePointCloud.cpp.s
 
+slamBase.o: slamBase.cpp.o
+
+.PHONY : slamBase.o
+
+# target to build an object file
+slamBase.cpp.o:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.o
+.PHONY : slamBase.cpp.o
+
+slamBase.i: slamBase.cpp.i
+
+.PHONY : slamBase.i
+
+# target to preprocess a source file
+slamBase.cpp.i:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.i
+.PHONY : slamBase.cpp.i
+
+slamBase.s: slamBase.cpp.s
+
+.PHONY : slamBase.s
+
+# target to generate assembly for a file
+slamBase.cpp.s:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.s
+.PHONY : slamBase.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,11 +243,19 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
 	@echo "... generate_pointcloud"
+	@echo "... slambase"
+	@echo "... detectFeatures"
+	@echo "... rebuild_cache"
+	@echo "... detectFeatures.o"
+	@echo "... detectFeatures.i"
+	@echo "... detectFeatures.s"
 	@echo "... generatePointCloud.o"
 	@echo "... generatePointCloud.i"
 	@echo "... generatePointCloud.s"
+	@echo "... slamBase.o"
+	@echo "... slamBase.i"
+	@echo "... slamBase.s"
 .PHONY : help
 
 

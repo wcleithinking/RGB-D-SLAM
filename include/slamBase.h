@@ -2,8 +2,8 @@
 
 /* Header Files */
 // C standard libraries
-#include <iostream>
-#include <string>
+#include <fstream>
+#include <vector>
 using namespace std;
 
 // OpenCV
@@ -13,6 +13,7 @@ using namespace std;
 // PCL
 #include <pcl-1.7/pcl/io/pcd_io.h>
 #include <pcl-1.7/pcl/point_types.h>
+//#include <pcl-1.7/pcl/point_cloud.h>
 
 // Typedef
 typedef pcl::PointXYZRGBA PointT;
@@ -22,7 +23,7 @@ typedef pcl::PointCloud<PointT> PointCloud;
 struct CAMERA_INTRINSIC_PARAMETERS
 {
 	double cx, cy, fx, fy, scale;
-}
+};
 
 /* Functions */
 // inputs: the cv::Mat(s) correspond to images rgb and depth and the camera parameters

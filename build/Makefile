@@ -123,6 +123,32 @@ generate_pointcloud/fast:
 	$(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/build
 .PHONY : generate_pointcloud/fast
 
+#=============================================================================
+# Target rules for targets named slambase
+
+# Build rule for target.
+slambase: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 slambase
+.PHONY : slambase
+
+# fast build rule for target.
+slambase/fast:
+	$(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
+.PHONY : slambase/fast
+
+#=============================================================================
+# Target rules for targets named detectFeatures
+
+# Build rule for target.
+detectFeatures: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 detectFeatures
+.PHONY : detectFeatures
+
+# fast build rule for target.
+detectFeatures/fast:
+	$(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
+.PHONY : detectFeatures/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +158,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... generate_pointcloud"
+	@echo "... slambase"
+	@echo "... detectFeatures"
 .PHONY : help
 
 

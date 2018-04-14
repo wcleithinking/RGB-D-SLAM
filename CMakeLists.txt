@@ -3,6 +3,7 @@ CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )	# set the version
 PROJECT( RGB-D-SLAM )	# set the name of the project
 
 SET( CMAKE_CXX_COMPILER "g++" )	# set the compiler
+SET( CMAKE_BUILD_TYPE Debug )
 SET( EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin )
 SET( LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib )
 

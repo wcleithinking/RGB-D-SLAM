@@ -6,10 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/home/wenchao/RGB-D-SLAM/src/generatePointCloud.cpp
-iostream
+../include/slamBase.h
+fstream
 -
-string
+vector
 -
 opencv2/core/core.hpp
 -
@@ -18,5 +18,15 @@ opencv2/highgui/highgui.hpp
 pcl-1.7/pcl/io/pcd_io.h
 -
 pcl-1.7/pcl/point_types.h
+-
+
+/home/wenchao/RGB-D-SLAM/src/detectFeatures.cpp
+iostream
+-
+slamBase.h
+/home/wenchao/RGB-D-SLAM/src/slamBase.h
+opencv2/features2d/features2d.hpp
+-
+opencv2/calib3d/calib3d.hpp
 -
 
