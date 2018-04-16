@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named generate_pointcloud
-
-# Build rule for target.
-generate_pointcloud: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 generate_pointcloud
-.PHONY : generate_pointcloud
-
-# fast build rule for target.
-generate_pointcloud/fast:
-	$(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/build
-.PHONY : generate_pointcloud/fast
-
-#=============================================================================
 # Target rules for targets named slambase
 
 # Build rule for target.
@@ -149,6 +136,32 @@ detectFeatures/fast:
 	$(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
 .PHONY : detectFeatures/fast
 
+#=============================================================================
+# Target rules for targets named jointPointCloud
+
+# Build rule for target.
+jointPointCloud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jointPointCloud
+.PHONY : jointPointCloud
+
+# fast build rule for target.
+jointPointCloud/fast:
+	$(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/build
+.PHONY : jointPointCloud/fast
+
+#=============================================================================
+# Target rules for targets named generate_pointcloud
+
+# Build rule for target.
+generate_pointcloud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 generate_pointcloud
+.PHONY : generate_pointcloud
+
+# fast build rule for target.
+generate_pointcloud/fast:
+	$(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/build
+.PHONY : generate_pointcloud/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -157,9 +170,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... generate_pointcloud"
 	@echo "... slambase"
 	@echo "... detectFeatures"
+	@echo "... jointPointCloud"
+	@echo "... generate_pointcloud"
 .PHONY : help
 
 

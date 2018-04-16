@@ -15,6 +15,10 @@ opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp
 -
+opencv2/features2d/features2d.hpp
+-
+opencv2/calib3d/calib3d.hpp
+-
 pcl-1.7/pcl/io/pcd_io.h
 -
 pcl-1.7/pcl/point_types.h

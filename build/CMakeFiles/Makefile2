@@ -63,16 +63,18 @@ CMAKE_BINARY_DIR = /home/wenchao/RGB-D-SLAM/build
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
-src/all: src/CMakeFiles/generate_pointcloud.dir/all
 src/all: src/CMakeFiles/slambase.dir/all
 src/all: src/CMakeFiles/detectFeatures.dir/all
+src/all: src/CMakeFiles/jointPointCloud.dir/all
+src/all: src/CMakeFiles/generate_pointcloud.dir/all
 
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
-src/clean: src/CMakeFiles/generate_pointcloud.dir/clean
 src/clean: src/CMakeFiles/slambase.dir/clean
 src/clean: src/CMakeFiles/detectFeatures.dir/clean
+src/clean: src/CMakeFiles/jointPointCloud.dir/clean
+src/clean: src/CMakeFiles/generate_pointcloud.dir/clean
 
 .PHONY : src/clean
 
@@ -82,50 +84,13 @@ src/preinstall:
 .PHONY : src/preinstall
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/generate_pointcloud.dir
-
-# All Build rule for target.
-src/CMakeFiles/generate_pointcloud.dir/all:
-	$(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/depend
-	$(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenchao/RGB-D-SLAM/build/CMakeFiles --progress-num=3,4 "Built target generate_pointcloud"
-.PHONY : src/CMakeFiles/generate_pointcloud.dir/all
-
-# Include target in all.
-all: src/CMakeFiles/generate_pointcloud.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/generate_pointcloud.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenchao/RGB-D-SLAM/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/generate_pointcloud.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenchao/RGB-D-SLAM/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/generate_pointcloud.dir/rule
-
-# Convenience name for target.
-generate_pointcloud: src/CMakeFiles/generate_pointcloud.dir/rule
-
-.PHONY : generate_pointcloud
-
-# clean rule for target.
-src/CMakeFiles/generate_pointcloud.dir/clean:
-	$(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/clean
-.PHONY : src/CMakeFiles/generate_pointcloud.dir/clean
-
-# clean rule for target.
-clean: src/CMakeFiles/generate_pointcloud.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target src/CMakeFiles/slambase.dir
 
 # All Build rule for target.
 src/CMakeFiles/slambase.dir/all:
 	$(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/depend
 	$(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenchao/RGB-D-SLAM/build/CMakeFiles --progress-num=5,6 "Built target slambase"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenchao/RGB-D-SLAM/build/CMakeFiles --progress-num=7,8 "Built target slambase"
 .PHONY : src/CMakeFiles/slambase.dir/all
 
 # Include target in all.
@@ -189,6 +154,80 @@ src/CMakeFiles/detectFeatures.dir/clean:
 
 # clean rule for target.
 clean: src/CMakeFiles/detectFeatures.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/jointPointCloud.dir
+
+# All Build rule for target.
+src/CMakeFiles/jointPointCloud.dir/all: src/CMakeFiles/slambase.dir/all
+	$(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/depend
+	$(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenchao/RGB-D-SLAM/build/CMakeFiles --progress-num=5,6 "Built target jointPointCloud"
+.PHONY : src/CMakeFiles/jointPointCloud.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/jointPointCloud.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/jointPointCloud.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenchao/RGB-D-SLAM/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/jointPointCloud.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenchao/RGB-D-SLAM/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/jointPointCloud.dir/rule
+
+# Convenience name for target.
+jointPointCloud: src/CMakeFiles/jointPointCloud.dir/rule
+
+.PHONY : jointPointCloud
+
+# clean rule for target.
+src/CMakeFiles/jointPointCloud.dir/clean:
+	$(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/clean
+.PHONY : src/CMakeFiles/jointPointCloud.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/jointPointCloud.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/generate_pointcloud.dir
+
+# All Build rule for target.
+src/CMakeFiles/generate_pointcloud.dir/all:
+	$(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/depend
+	$(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenchao/RGB-D-SLAM/build/CMakeFiles --progress-num=3,4 "Built target generate_pointcloud"
+.PHONY : src/CMakeFiles/generate_pointcloud.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/generate_pointcloud.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/generate_pointcloud.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenchao/RGB-D-SLAM/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/generate_pointcloud.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenchao/RGB-D-SLAM/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/generate_pointcloud.dir/rule
+
+# Convenience name for target.
+generate_pointcloud: src/CMakeFiles/generate_pointcloud.dir/rule
+
+.PHONY : generate_pointcloud
+
+# clean rule for target.
+src/CMakeFiles/generate_pointcloud.dir/clean:
+	$(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/clean
+.PHONY : src/CMakeFiles/generate_pointcloud.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/generate_pointcloud.dir/clean
 
 .PHONY : clean
 

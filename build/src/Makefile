@@ -111,21 +111,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/generate_pointcloud.dir/rule:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/generate_pointcloud.dir/rule
-.PHONY : src/CMakeFiles/generate_pointcloud.dir/rule
-
-# Convenience name for target.
-generate_pointcloud: src/CMakeFiles/generate_pointcloud.dir/rule
-
-.PHONY : generate_pointcloud
-
-# fast build rule for target.
-generate_pointcloud/fast:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/build
-.PHONY : generate_pointcloud/fast
-
-# Convenience name for target.
 src/CMakeFiles/slambase.dir/rule:
 	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slambase.dir/rule
 .PHONY : src/CMakeFiles/slambase.dir/rule
@@ -154,6 +139,36 @@ detectFeatures: src/CMakeFiles/detectFeatures.dir/rule
 detectFeatures/fast:
 	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
 .PHONY : detectFeatures/fast
+
+# Convenience name for target.
+src/CMakeFiles/jointPointCloud.dir/rule:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/jointPointCloud.dir/rule
+.PHONY : src/CMakeFiles/jointPointCloud.dir/rule
+
+# Convenience name for target.
+jointPointCloud: src/CMakeFiles/jointPointCloud.dir/rule
+
+.PHONY : jointPointCloud
+
+# fast build rule for target.
+jointPointCloud/fast:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/build
+.PHONY : jointPointCloud/fast
+
+# Convenience name for target.
+src/CMakeFiles/generate_pointcloud.dir/rule:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/generate_pointcloud.dir/rule
+.PHONY : src/CMakeFiles/generate_pointcloud.dir/rule
+
+# Convenience name for target.
+generate_pointcloud: src/CMakeFiles/generate_pointcloud.dir/rule
+
+.PHONY : generate_pointcloud
+
+# fast build rule for target.
+generate_pointcloud/fast:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/build
+.PHONY : generate_pointcloud/fast
 
 detectFeatures.o: detectFeatures.cpp.o
 
@@ -209,6 +224,33 @@ generatePointCloud.cpp.s:
 	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/generatePointCloud.cpp.s
 .PHONY : generatePointCloud.cpp.s
 
+jointPointCloud.o: jointPointCloud.cpp.o
+
+.PHONY : jointPointCloud.o
+
+# target to build an object file
+jointPointCloud.cpp.o:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/jointPointCloud.cpp.o
+.PHONY : jointPointCloud.cpp.o
+
+jointPointCloud.i: jointPointCloud.cpp.i
+
+.PHONY : jointPointCloud.i
+
+# target to preprocess a source file
+jointPointCloud.cpp.i:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/jointPointCloud.cpp.i
+.PHONY : jointPointCloud.cpp.i
+
+jointPointCloud.s: jointPointCloud.cpp.s
+
+.PHONY : jointPointCloud.s
+
+# target to generate assembly for a file
+jointPointCloud.cpp.s:
+	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/jointPointCloud.cpp.s
+.PHONY : jointPointCloud.cpp.s
+
 slamBase.o: slamBase.cpp.o
 
 .PHONY : slamBase.o
@@ -243,16 +285,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... generate_pointcloud"
+	@echo "... rebuild_cache"
 	@echo "... slambase"
 	@echo "... detectFeatures"
-	@echo "... rebuild_cache"
+	@echo "... jointPointCloud"
+	@echo "... generate_pointcloud"
 	@echo "... detectFeatures.o"
 	@echo "... detectFeatures.i"
 	@echo "... detectFeatures.s"
 	@echo "... generatePointCloud.o"
 	@echo "... generatePointCloud.i"
 	@echo "... generatePointCloud.s"
+	@echo "... jointPointCloud.o"
+	@echo "... jointPointCloud.i"
+	@echo "... jointPointCloud.s"
 	@echo "... slamBase.o"
 	@echo "... slamBase.i"
 	@echo "... slamBase.s"
