@@ -1,4 +1,4 @@
-#include "slamBase.h"
+#include "../include/slamBase.h"
 
 PointCloud::Ptr image2PointCloud( cv::Mat &rgb, cv::Mat &depth, CAMERA_INTRINSIC_PARAMETERS &camera )
 {

@@ -16,8 +16,8 @@ using namespace std;
 
 
 // PCL
-#include <pcl-1.7/pcl/io/pcd_io.h>
-#include <pcl-1.7/pcl/point_types.h>
+#include <pcl/io/pcd_io.h>
+#include <pcl/point_types.h>
 //#include <pcl-1.7/pcl/point_cloud.h>
 
 // Typedef
@@ -50,7 +50,7 @@ struct RESULT_OF_PNP
 class ParameterReader
 {
 public:
-	ParameterReader( string filename="./parameters.txt" )
+	ParameterReader( string filename="../parameters.txt" )
 	{
 		ifstream fin( filename.c_str() );
 		if (!fin)

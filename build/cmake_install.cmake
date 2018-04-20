@@ -1,4 +1,4 @@
-# Install script for directory: /home/wenchao/RGB-D-SLAM
+# Install script for directory: /home/wenchao/GitHub/RGB-D-SLAM
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/wenchao/RGB-D-SLAM/build/src/cmake_install.cmake")
+  include("/home/wenchao/GitHub/RGB-D-SLAM/build/src/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wenchao/RGB-D-SLAM/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/wenchao/GitHub/RGB-D-SLAM/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

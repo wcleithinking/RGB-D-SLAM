@@ -1,4 +1,4 @@
-# Install script for directory: /home/wenchao/RGB-D-SLAM/src
+# Install script for directory: /home/wenchao/GitHub/RGB-D-SLAM/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

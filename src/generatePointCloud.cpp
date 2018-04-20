@@ -6,8 +6,8 @@ using namespace std;
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-#include <pcl-1.7/pcl/io/pcd_io.h>
-#include <pcl-1.7/pcl/point_types.h>
+#include <pcl/io/pcd_io.h>
+#include <pcl/point_types.h>
 
 typedef pcl::PointXYZRGBA PointT;
 typedef pcl::PointCloud<PointT> PointCloud;
@@ -21,8 +21,8 @@ const double camera_fy = 519.0;
 int main( int argc, char** argv)
 {
 	cv::Mat rgb, depth;
-	rgb = cv::imread( "/home/wenchao/RGB-D-SLAM/data/test_figure_rgb.png" );
-	depth = cv::imread( "/home/wenchao/RGB-D-SLAM/data/test_figure_depth.png" );
+	rgb = cv::imread( "../data/test_figure_rgb.png" );
+	depth = cv::imread( "../data/test_figure_depth.png" );
 
 	PointCloud::Ptr cloud( new PointCloud ); // empty point cloud
 	
@@ -56,7 +56,7 @@ int main( int argc, char** argv)
 	cloud->width = cloud->points.size();
 	cout<<"point cloud size = "<<cloud->points.size()<<endl;
 	cloud->is_dense = false;
-	pcl::io::savePCDFile( "/home/wenchao/RGB-D-SLAM/data/test_figure_pointcloud.pcd", *cloud );
+	pcl::io::savePCDFile( "../data/test_figure_pointcloud.pcd", *cloud );
 
 	cloud->points.clear();
 	cout<<"Point cloud saved."<<endl;

@@ -1,1 +1,0 @@
-g++      CMakeFiles/main.dir/main.cpp.o  -o ../../bin/main  -L/home/wenchao/RGB-D-SLAM/lib -rdynamic 

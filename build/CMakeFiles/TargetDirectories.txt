@@ -1,8 +1,8 @@
-/home/wenchao/RGB-D-SLAM/build/CMakeFiles/edit_cache.dir
-/home/wenchao/RGB-D-SLAM/build/CMakeFiles/rebuild_cache.dir
-/home/wenchao/RGB-D-SLAM/build/src/CMakeFiles/edit_cache.dir
-/home/wenchao/RGB-D-SLAM/build/src/CMakeFiles/rebuild_cache.dir
-/home/wenchao/RGB-D-SLAM/build/src/CMakeFiles/slambase.dir
-/home/wenchao/RGB-D-SLAM/build/src/CMakeFiles/detectFeatures.dir
-/home/wenchao/RGB-D-SLAM/build/src/CMakeFiles/jointPointCloud.dir
-/home/wenchao/RGB-D-SLAM/build/src/CMakeFiles/generate_pointcloud.dir
+/home/wenchao/GitHub/RGB-D-SLAM/build/CMakeFiles/edit_cache.dir
+/home/wenchao/GitHub/RGB-D-SLAM/build/CMakeFiles/rebuild_cache.dir
+/home/wenchao/GitHub/RGB-D-SLAM/build/src/CMakeFiles/edit_cache.dir
+/home/wenchao/GitHub/RGB-D-SLAM/build/src/CMakeFiles/rebuild_cache.dir
+/home/wenchao/GitHub/RGB-D-SLAM/build/src/CMakeFiles/slambase.dir
+/home/wenchao/GitHub/RGB-D-SLAM/build/src/CMakeFiles/detectFeatures.dir
+/home/wenchao/GitHub/RGB-D-SLAM/build/src/CMakeFiles/jointPointCloud.dir
+/home/wenchao/GitHub/RGB-D-SLAM/build/src/CMakeFiles/generate_pointcloud.dir

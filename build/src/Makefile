@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wenchao/RGB-D-SLAM
+CMAKE_SOURCE_DIR = /home/wenchao/GitHub/RGB-D-SLAM
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wenchao/RGB-D-SLAM/build
+CMAKE_BINARY_DIR = /home/wenchao/GitHub/RGB-D-SLAM/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/wenchao/RGB-D-SLAM/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wenchao/RGB-D-SLAM/build/CMakeFiles /home/wenchao/RGB-D-SLAM/build/src/CMakeFiles/progress.marks
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenchao/RGB-D-SLAM/build/CMakeFiles 0
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wenchao/GitHub/RGB-D-SLAM/build/CMakeFiles /home/wenchao/GitHub/RGB-D-SLAM/build/src/CMakeFiles/progress.marks
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenchao/GitHub/RGB-D-SLAM/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/wenchao/RGB-D-SLAM/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/slambase.dir/rule:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slambase.dir/rule
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slambase.dir/rule
 .PHONY : src/CMakeFiles/slambase.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ slambase: src/CMakeFiles/slambase.dir/rule
 
 # fast build rule for target.
 slambase/fast:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
 .PHONY : slambase/fast
 
 # Convenience name for target.
 src/CMakeFiles/detectFeatures.dir/rule:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/detectFeatures.dir/rule
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/detectFeatures.dir/rule
 .PHONY : src/CMakeFiles/detectFeatures.dir/rule
 
 # Convenience name for target.
@@ -137,12 +137,12 @@ detectFeatures: src/CMakeFiles/detectFeatures.dir/rule
 
 # fast build rule for target.
 detectFeatures/fast:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
 .PHONY : detectFeatures/fast
 
 # Convenience name for target.
 src/CMakeFiles/jointPointCloud.dir/rule:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/jointPointCloud.dir/rule
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/jointPointCloud.dir/rule
 .PHONY : src/CMakeFiles/jointPointCloud.dir/rule
 
 # Convenience name for target.
@@ -152,12 +152,12 @@ jointPointCloud: src/CMakeFiles/jointPointCloud.dir/rule
 
 # fast build rule for target.
 jointPointCloud/fast:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/build
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/build
 .PHONY : jointPointCloud/fast
 
 # Convenience name for target.
 src/CMakeFiles/generate_pointcloud.dir/rule:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/generate_pointcloud.dir/rule
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/generate_pointcloud.dir/rule
 .PHONY : src/CMakeFiles/generate_pointcloud.dir/rule
 
 # Convenience name for target.
@@ -167,7 +167,7 @@ generate_pointcloud: src/CMakeFiles/generate_pointcloud.dir/rule
 
 # fast build rule for target.
 generate_pointcloud/fast:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/build
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/build
 .PHONY : generate_pointcloud/fast
 
 detectFeatures.o: detectFeatures.cpp.o
@@ -176,7 +176,7 @@ detectFeatures.o: detectFeatures.cpp.o
 
 # target to build an object file
 detectFeatures.cpp.o:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.o
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.o
 .PHONY : detectFeatures.cpp.o
 
 detectFeatures.i: detectFeatures.cpp.i
@@ -185,7 +185,7 @@ detectFeatures.i: detectFeatures.cpp.i
 
 # target to preprocess a source file
 detectFeatures.cpp.i:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.i
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.i
 .PHONY : detectFeatures.cpp.i
 
 detectFeatures.s: detectFeatures.cpp.s
@@ -194,7 +194,7 @@ detectFeatures.s: detectFeatures.cpp.s
 
 # target to generate assembly for a file
 detectFeatures.cpp.s:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.s
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/detectFeatures.cpp.s
 .PHONY : detectFeatures.cpp.s
 
 generatePointCloud.o: generatePointCloud.cpp.o
@@ -203,7 +203,7 @@ generatePointCloud.o: generatePointCloud.cpp.o
 
 # target to build an object file
 generatePointCloud.cpp.o:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/generatePointCloud.cpp.o
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/generatePointCloud.cpp.o
 .PHONY : generatePointCloud.cpp.o
 
 generatePointCloud.i: generatePointCloud.cpp.i
@@ -212,7 +212,7 @@ generatePointCloud.i: generatePointCloud.cpp.i
 
 # target to preprocess a source file
 generatePointCloud.cpp.i:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/generatePointCloud.cpp.i
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/generatePointCloud.cpp.i
 .PHONY : generatePointCloud.cpp.i
 
 generatePointCloud.s: generatePointCloud.cpp.s
@@ -221,7 +221,7 @@ generatePointCloud.s: generatePointCloud.cpp.s
 
 # target to generate assembly for a file
 generatePointCloud.cpp.s:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/generatePointCloud.cpp.s
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/generatePointCloud.cpp.s
 .PHONY : generatePointCloud.cpp.s
 
 jointPointCloud.o: jointPointCloud.cpp.o
@@ -230,7 +230,7 @@ jointPointCloud.o: jointPointCloud.cpp.o
 
 # target to build an object file
 jointPointCloud.cpp.o:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/jointPointCloud.cpp.o
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/jointPointCloud.cpp.o
 .PHONY : jointPointCloud.cpp.o
 
 jointPointCloud.i: jointPointCloud.cpp.i
@@ -239,7 +239,7 @@ jointPointCloud.i: jointPointCloud.cpp.i
 
 # target to preprocess a source file
 jointPointCloud.cpp.i:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/jointPointCloud.cpp.i
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/jointPointCloud.cpp.i
 .PHONY : jointPointCloud.cpp.i
 
 jointPointCloud.s: jointPointCloud.cpp.s
@@ -248,7 +248,7 @@ jointPointCloud.s: jointPointCloud.cpp.s
 
 # target to generate assembly for a file
 jointPointCloud.cpp.s:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/jointPointCloud.cpp.s
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/jointPointCloud.dir/build.make src/CMakeFiles/jointPointCloud.dir/jointPointCloud.cpp.s
 .PHONY : jointPointCloud.cpp.s
 
 slamBase.o: slamBase.cpp.o
@@ -257,7 +257,7 @@ slamBase.o: slamBase.cpp.o
 
 # target to build an object file
 slamBase.cpp.o:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.o
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.o
 .PHONY : slamBase.cpp.o
 
 slamBase.i: slamBase.cpp.i
@@ -266,7 +266,7 @@ slamBase.i: slamBase.cpp.i
 
 # target to preprocess a source file
 slamBase.cpp.i:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.i
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.i
 .PHONY : slamBase.cpp.i
 
 slamBase.s: slamBase.cpp.s
@@ -275,7 +275,7 @@ slamBase.s: slamBase.cpp.s
 
 # target to generate assembly for a file
 slamBase.cpp.s:
-	cd /home/wenchao/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.s
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.s
 .PHONY : slamBase.cpp.s
 
 # Help Target
@@ -313,6 +313,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/wenchao/RGB-D-SLAM/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/wenchao/GitHub/RGB-D-SLAM/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

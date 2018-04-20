@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-#include "slamBase.h"
+#include "../include/slamBase.h"
 
 #include <opencv2/core/eigen.hpp>
 
@@ -20,10 +20,10 @@ int main( int argc, char** argv )
     FRAME frame1, frame2;
     
     //读取图像
-    frame1.rgb = cv::imread( "./data/rgb1.png" );
-    frame1.depth = cv::imread( "./data/depth1.png", -1);
-    frame2.rgb = cv::imread( "./data/rgb2.png" );
-    frame2.depth = cv::imread( "./data/depth2.png", -1 );
+    frame1.rgb = cv::imread( "../data/rgb1.png" );
+    frame1.depth = cv::imread( "../data/depth1.png", -1);
+    frame2.rgb = cv::imread( "../data/rgb2.png" );
+    frame2.depth = cv::imread( "../data/depth2.png", -1 );
 
     // 提取特征并计算描述子
     cout<<"extracting features"<<endl;
@@ -75,14 +75,14 @@ int main( int argc, char** argv )
     PointCloud::Ptr output (new PointCloud());
     pcl::transformPointCloud( *cloud1, *output, T.matrix() );
     *output += *cloud2;
-    pcl::io::savePCDFile("data/result.pcd", *output);
+    pcl::io::savePCDFile("../data/result.pcd", *output);
     cout<<"Final result saved."<<endl;
 
-    pcl::visualization::CloudViewer viewer( "viewer" );
-    viewer.showCloud( output );
-    while( !viewer.wasStopped() )
-    {
+    // pcl::visualization::CloudViewer viewer( "viewer" );
+    // viewer.showCloud( output );
+    // while( !viewer.wasStopped() )
+    // {
         
-    }
+    // }
     return 0;
 }
