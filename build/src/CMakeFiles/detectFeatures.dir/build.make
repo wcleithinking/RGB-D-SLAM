@@ -134,6 +134,10 @@ detectFeatures_EXTERNAL_OBJECTS =
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/lib/libhdf5_hl.so
 ../bin/detectFeatures: /usr/lib/openmpi/lib/libmpi.so
 ../bin/detectFeatures: /usr/local/lib/libpcl_io.so
+../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+../bin/detectFeatures: /usr/local/lib/libpcl_kdtree.so
+../bin/detectFeatures: /usr/local/lib/libpcl_search.so
+../bin/detectFeatures: /usr/local/lib/libpcl_visualization.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libboost_system.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -145,6 +149,7 @@ detectFeatures_EXTERNAL_OBJECTS =
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libpthread.so
 ../bin/detectFeatures: /usr/lib/libOpenNI.so
+../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libz.so
 ../bin/detectFeatures: /usr/lib/libgl2ps.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libpng.so
@@ -345,6 +350,10 @@ detectFeatures_EXTERNAL_OBJECTS =
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libtiff.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libexpat.so
 ../bin/detectFeatures: /usr/local/lib/libpcl_io.so
+../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+../bin/detectFeatures: /usr/local/lib/libpcl_kdtree.so
+../bin/detectFeatures: /usr/local/lib/libpcl_search.so
+../bin/detectFeatures: /usr/local/lib/libpcl_visualization.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libboost_system.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -365,6 +374,10 @@ detectFeatures_EXTERNAL_OBJECTS =
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libtiff.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libexpat.so
 ../bin/detectFeatures: /usr/local/lib/libpcl_io.so
+../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+../bin/detectFeatures: /usr/local/lib/libpcl_kdtree.so
+../bin/detectFeatures: /usr/local/lib/libpcl_search.so
+../bin/detectFeatures: /usr/local/lib/libpcl_visualization.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libpython2.7.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libfreetype.so
 ../bin/detectFeatures: /usr/lib/x86_64-linux-gnu/libxml2.so

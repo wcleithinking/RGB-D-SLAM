@@ -133,6 +133,10 @@ generate_pointcloud_EXTERNAL_OBJECTS =
 ../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/lib/libhdf5_hl.so
 ../bin/generate_pointcloud: /usr/lib/openmpi/lib/libmpi.so
 ../bin/generate_pointcloud: /usr/local/lib/libpcl_io.so
+../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+../bin/generate_pointcloud: /usr/local/lib/libpcl_kdtree.so
+../bin/generate_pointcloud: /usr/local/lib/libpcl_search.so
+../bin/generate_pointcloud: /usr/local/lib/libpcl_visualization.so
 ../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/libboost_system.so
 ../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 ../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -144,6 +148,7 @@ generate_pointcloud_EXTERNAL_OBJECTS =
 ../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 ../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/libpthread.so
 ../bin/generate_pointcloud: /usr/lib/libOpenNI.so
+../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 ../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/libz.so
 ../bin/generate_pointcloud: /usr/lib/libgl2ps.so
 ../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/libpng.so
@@ -241,6 +246,9 @@ generate_pointcloud_EXTERNAL_OBJECTS =
 ../bin/generate_pointcloud: /usr/local/lib/libpcl_common.so
 ../bin/generate_pointcloud: /usr/local/lib/libpcl_octree.so
 ../bin/generate_pointcloud: /usr/local/lib/libpcl_io.so
+../bin/generate_pointcloud: /usr/local/lib/libpcl_kdtree.so
+../bin/generate_pointcloud: /usr/local/lib/libpcl_search.so
+../bin/generate_pointcloud: /usr/local/lib/libpcl_visualization.so
 ../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.9
 ../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.9
 ../bin/generate_pointcloud: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.9

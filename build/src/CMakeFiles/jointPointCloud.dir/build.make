@@ -134,6 +134,10 @@ jointPointCloud_EXTERNAL_OBJECTS =
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/lib/libhdf5_hl.so
 ../bin/jointPointCloud: /usr/lib/openmpi/lib/libmpi.so
 ../bin/jointPointCloud: /usr/local/lib/libpcl_io.so
+../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+../bin/jointPointCloud: /usr/local/lib/libpcl_kdtree.so
+../bin/jointPointCloud: /usr/local/lib/libpcl_search.so
+../bin/jointPointCloud: /usr/local/lib/libpcl_visualization.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libboost_system.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -145,6 +149,7 @@ jointPointCloud_EXTERNAL_OBJECTS =
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libpthread.so
 ../bin/jointPointCloud: /usr/lib/libOpenNI.so
+../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libz.so
 ../bin/jointPointCloud: /usr/lib/libgl2ps.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libpng.so
@@ -345,6 +350,10 @@ jointPointCloud_EXTERNAL_OBJECTS =
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libtiff.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libexpat.so
 ../bin/jointPointCloud: /usr/local/lib/libpcl_io.so
+../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+../bin/jointPointCloud: /usr/local/lib/libpcl_kdtree.so
+../bin/jointPointCloud: /usr/local/lib/libpcl_search.so
+../bin/jointPointCloud: /usr/local/lib/libpcl_visualization.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libboost_system.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -365,6 +374,10 @@ jointPointCloud_EXTERNAL_OBJECTS =
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libtiff.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libexpat.so
 ../bin/jointPointCloud: /usr/local/lib/libpcl_io.so
+../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+../bin/jointPointCloud: /usr/local/lib/libpcl_kdtree.so
+../bin/jointPointCloud: /usr/local/lib/libpcl_search.so
+../bin/jointPointCloud: /usr/local/lib/libpcl_visualization.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libpython2.7.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libfreetype.so
 ../bin/jointPointCloud: /usr/lib/x86_64-linux-gnu/libxml2.so
